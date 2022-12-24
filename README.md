@@ -1,3 +1,4 @@
+
 # Sparse copula models
 
 Matlab implementation of sparse copula models with pseudo-observations replicating the results of the paper:
@@ -77,3 +78,20 @@ The replicator should execute the following Matlab files to replicate Table 1, T
 **C. Replication of Figure 1**
 
 - Program *sensitivity.m* will replicate Figure 1: the sensitiviy patterns for each loss function (Gaussian, least squares) and penalty function (SCAD, MCP) are saved in 'Metrics.mat'.
+
+**D. Main functions**
+
+- **simulate_sparse_correlation.m**:
+Simulate a sparse and positive-definite covariance (correlation) matrix for the p-dimensional Gaussian copula, with a pre-specified "sparsity degree" (number of desired zero entries in the lower diagonal elements).
+
+- **sparse_gaussian_copula.m**:
+Estimate a sparse and positive-definite covariance (correlation) matrix based on the pseudo-observations, where: the loss function is the Gaussian loss or the Least Squares loss; the penalty function is the SCAD, MCP or LASSO; the optimal tuning parameter is selected by a 5-fold cross-validation.
+
+- **gaussian_copula_penalised.m**:
+Gradient-descent type algorithm to obtain a sparse and positive definite covariance (correlation) matrix, for a given tuning parameter "lambda_n", with: Gaussian loss or Least Squares loss; SCAD, MCP or LASSO penalty function.
+
+- **simulate_sparse_conditional_copula_parameter.m**:
+Simulate a sparse vector of coefficients and the covariates in uniform distributions U (U(0.05,1) and U(0,1), respectively). The function also provides the copula parameter for each observation deduced from the Kendall's tau mappings.
+
+- **sparse_conditional_copula.m**:
+Sparsity-based estimation the coefficients of the link function (parameterized in terms of Kendall's tau) entering in the Gumbel/Clayton copula, where the optimal tuning parameter is selected by a 5-fold cross-validation.
