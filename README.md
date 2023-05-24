@@ -35,7 +35,7 @@ Parallel Computing Toolbox is highly recommended to run the code to speed up the
 
 For the sake of replication, seeds have been specified in *simulations_sparse_gaussian_copula.m*, *simulations_sparse_conditional.m* and *simulations_sensitivity_sparse_gaussian_copula.m*. To be specific:
 - in *simulations_sparse_gaussian_copula.m*, seeds are set in: lines 3, 176, 349 and 517.
-- in *simulations_sparse_conditional.m*, seeds are set in: lines 3, 95, 195 and 286.
+- in *simulations_sparse_conditional.m*, seeds are set in: lines 3, 94, 194 and 285.
 - in *simulations_sensitivity_sparse_gaussian_copula.m*, the seed is set in line 2.
 
 # Run-time Requirements
