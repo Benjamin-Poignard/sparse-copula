@@ -29,7 +29,7 @@ The following toolboxes should be installed:
 - Global Optimization Toolbox, Version 4.7.
 - Optimization Toolbox, Version 9.3.
 
-Parallel Computing Toolbox is highly recommended to run the code to speed up the cross-validation procedure employed to select the optimal tuning parameter. All the run-time requirements displayed below are reported when the code is run with the Parallel Computing Toolbox.
+Parallel Computing Toolbox is highly recommended to run the code to speed up the cross-validation procedure employed to select the optimal tuning parameter. All the run-time requirements displayed below are reported when the code is run with the Parallel Computing Toolbox. A different version of the Optimization Toolbox may provide slightly different results when running the code in *simulations_sparse_conditional.m* (due to different optimal solutions).
 
 # Controlled randomness
 
