@@ -49,7 +49,7 @@ The files for replicating the simulated experiments are split into sections acco
 The approximate time needed to reproduce the simulated experiments on a Mac-OS M1 Ultra desktop machine is as follows:
 
 - To run each section of the file *simulations_sparse_gaussian_copula.m*, the approximate computation time is: 8 hours when p = 10 and 24 hours when p = 20. 
-- To run file *sensitivity_case_1.m* and *sensitivity_case_2.m*: approximately 144 hours.
+- To run file *sensitivity_case_1.m* and *sensitivity_case_2.m*: approximately 96 hours.
 - To run each section of the file *simulations_sparse_conditional.m*, the approximate computation time is: 70 hours (resp. 122 hours) for the Gumbel copula when n = 500 (resp. n = 1000); 37 hours (resp. 46 hours) for the Clayton copula when n = 500 (resp. n = 1000).
 
 **Remark:** The computation time highly depends on the grid size selected for cross-validation to choose the optimal penalization parameter "\lambda_n" (called tuning or regularization parameter): in all the simulated experiments, the optimal tuning parameter is searched in the grid $\{c\sqrt{\log(dim)/n}, c=0.01, 0.05, 0.1, ..., 4.5\}$, so that there are $91$ different candidates for the tuning parameter.
