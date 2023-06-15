@@ -93,6 +93,6 @@ if min(eig(vech_off(param_est,p)))<0.001
     % If the estimator is not positive-definite, then a projection on the
     % set of positive-definite matrix is applied (the negative-eigenvalues 
     % are set to small positive values)
-    C_proj =  proj_defpos(vech_off(param_est,p));
+    C_proj =  nearcorr(vech_off(param_est,p));
     param_est = vech_on(C_proj,p);
 end
