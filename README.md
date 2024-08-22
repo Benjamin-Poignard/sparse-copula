@@ -5,7 +5,8 @@ Matlab implementation of sparse copula models with pseudo-observations replicati
 
 *Sparse M-estimators in semi-parametric copula models* by Jean-David Fermanian and Benjamin Poignard.
 
-Link: https://arxiv.org/abs/2112.12351
+DOI: 10.3150/23-BEJ1681
+Link to arxiv working paper:  https://arxiv.org/abs/2112.12351
 
 
 # Overview
